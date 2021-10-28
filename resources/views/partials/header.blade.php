@@ -5,7 +5,7 @@
         alt="Stateless Code logo"
         src="@asset('images/stateless_logo.svg')"
         class="h-16 float-left inline-block">
-      <span class="inline-block mt-3 ml-4 md:ml-6 xl:ml-8 text-gray-300 font-mono lowercase">{{ $siteName }}</span>
+      <span class="inline-block mt-3 ml-4 md:ml-6 xl:ml-8 text-scblue-200 font-mono lowercase">{{ $siteName }}</span>
     </a>
   </div>
 

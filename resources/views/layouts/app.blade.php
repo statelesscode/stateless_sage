@@ -5,17 +5,17 @@
   </a>
 
   @include('partials.header')
+    <div class="lg:flex">
+      <main id="main"
+        class="main-layout-content main flex-none">
+        @yield('content')
+      </main>
 
-    <main id="main"
-      class="main-layout-content main">
-      @yield('content')
-    </main>
-
-    @hasSection('sidebar')
-      <aside class="sidebar">
-        @yield('sidebar')
-      </aside>
-    @endif
-
+      @hasSection('sidebar')
+        <aside class="sidebar flex-auto">
+          @yield('sidebar')
+        </aside>
+      @endif
+    </div>
   @include('partials.footer')
 </div>

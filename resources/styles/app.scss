@@ -6,11 +6,16 @@
 @import 'tailwindcss/utilities';
 
 .main-layout-content {
-  @apply py-8 ml-4 sm:ml-12 md:ml-16 lg:ml-24 xl:ml-48 2xl:ml-64 mr-4 prose lg:prose-lg
+  @apply py-8 ml-4 sm:ml-12 md:ml-16 lg:ml-24 xl:ml-48 2xl:ml-64 mr-4 lg:mr-12
+  prose lg:prose-lg break-words font-sans
 }
 
 .sidebar {
-  @apply bg-gradient-to-br from-scpink to-scpink-900
+  @apply bg-gradient-to-r from-scblue-800 to-scblue py-8 px-4 sm:px-12
+  text-scgold-100 truncate break-words font-serif
+}
+
+.content-info {
 }
 
 .site-footer {

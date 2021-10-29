@@ -1,3 +1,3 @@
-<footer class="content-info">
-  @php(dynamic_sidebar('sidebar-footer'))
+<footer class="site-footer">
+  <h3>Hello world, Taxation is theft!</h3>
 </footer>

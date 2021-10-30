@@ -15,8 +15,11 @@
   text-scgold-100 truncate break-words font-serif
 }
 
-.content-info {
+.site-footer {
+  @apply  bg-gradient-to-br from-scseafoam-500 to-scseafoam-800 text-scbluegray-50
+  py-8 px-4 sm:px-12
 }
 
-.site-footer {
+.footer-text-link {
+  @apply text-scgold-100 hover:text-scgold-600
 }

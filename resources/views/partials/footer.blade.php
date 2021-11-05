@@ -9,7 +9,7 @@ $facebook_url = "https://www.facebook.com/statelesscode";
 $twitter_url = "https://twitter.com/statelesscode";
 $instagram_url = "https://www.instagram.com/statelesscode/";
 ?>
-<footer class="site-footer">
+<footer class="site-footer content-info">
   <!-- Legal -->
   <div class="legal">
     <!-- ANTI IP ICON LINKS -->
@@ -52,41 +52,7 @@ $instagram_url = "https://www.instagram.com/statelesscode/";
   <div class="footer-social">
     <p class="text-center text-sm my-2">Follow us on social media.</p>
     <div class="flex space-x-4 items-center justify-center">
-      <div>
-        <a href="{{ $github_url }}" target="_blank">
-          <img alt="GitHub logo"
-               src="@asset('images/Octicons-mark-github.svg')"
-               class="h-6 flex-auto">
-        </a>
-      </div>
-      <div>
-        <a href="{{ $youtube_url }}" target="_blank">
-          <img alt="YouTube logo"
-               src="@asset('images/youtube-logo.svg')"
-               class="h-6 flex-auto">
-        </a>
-      </div>
-      <div>
-        <a href="{{ $facebook_url }}" target="_blank">
-          <img alt="Facebook logo"
-               src="@asset('images/facebook-logo.svg')"
-               class="h-6 flex-auto">
-        </a>
-      </div>
-      <div>
-        <a href="{{ $twitter_url }}" target="_blank">
-          <img alt="Twitter logo"
-               src="@asset('images/twitter-logo.svg')"
-               class="h-6 flex-auto">
-        </a>
-      </div>
-      <div>
-        <a href="{{ $instagram_url }}" target="_blank">
-          <img alt="Instagram logo"
-               src="@asset('images/instagram-logo.svg')"
-               class="h-6 flex-auto">
-        </a>
-      </div>
+      @php(dynamic_sidebar('sidebar-footer'))
     </div>
   </div>
   <p class="text-center my-4">Jesus is Lord. Taxation is theft!</p>

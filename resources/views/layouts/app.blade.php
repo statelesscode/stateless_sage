@@ -7,12 +7,12 @@
   @include('partials.header')
     <div class="lg:flex">
       <main id="main"
-        class="main-layout-content main flex-none">
+        class="main-layout-content main">
         @yield('content')
       </main>
 
       @hasSection('sidebar')
-        <aside class="sidebar flex-auto">
+        <aside class="sidebar">
           @yield('sidebar')
         </aside>
       @endif

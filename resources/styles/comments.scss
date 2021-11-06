@@ -1,4 +1,37 @@
 section.comments {
+  div.comment-respond {
+    form {
+      p.logged-in-as {
+        a {
+          @apply text-scpink-900 hover:text-scpink-400
+        }
+        @apply py-3 text-scpink-900
+      }
+      p.comment-form-comment {
+        textarea {
+          @apply bg-gray-50 text-gray-900 rounded-xl mb-2 mr-2 p-2
+          text-xs sm:text-sm md:text-base w-64 sm:w-72 lg:w-80 xl:w-96
+        }
+        label {
+          @apply block
+        }
+        @apply max-w-xs
+      }
+      p.form-submit {
+        input.submit {
+          @apply bg-scblue-600 p-2 rounded-xl font-semibold
+        }
+      }
+    }
+    h3.comment-reply-title {
+      small a {
+        @apply pl-6 text-scpink-900 hover:text-scpink-400
+      }
+      @apply text-scbluegray-50
+    }
+    @apply p-4 sm:p-6 md:p-8 rounded-3xl bg-gradient-to-br from-scgold-700 to-scgold-500 text-scbluegray-50
+  }
+
   ol.comment-list {
     li {
       ol.children li {

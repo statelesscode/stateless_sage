@@ -6,3 +6,7 @@
     @includeFirst(['partials.content-page', 'partials.content'])
   @endwhile
 @endsection
+
+@section('sidebar')
+  @include('partials.sidebar')
+@endsection

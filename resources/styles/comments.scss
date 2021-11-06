@@ -1,0 +1,43 @@
+section.comments {
+  ol.comment-list {
+    li {
+      ol.children li {
+        a {
+          @apply text-scpink-900 hover:text-scpink-400
+        }
+        @apply rounded-lg bg-gradient-to-r
+        pl-2 pr-0 border-2 ml-0 mr-0 mt-6 mb-1 border-r-0
+        sm:pl-3 sm:pr-1 sm:border-2 sm:ml-1 sm:mt-6 sm:border-r-0
+        md:pl-4 md:pr-1 md:border-2 md:ml-2 md:mt-6 md:border-r-0
+        lg:pl-4 lg:pr-1 lg:border-4 lg:ml-3 lg:mt-6 lg:border-r-0
+        xl:pl-4 xl:pr-1 xl:border-4 xl:ml-3 xl:mt-8 xl:border-r-0
+        2xl:pl-4 2xl:pr-1 2xl:border-4 2xl:ml-3 2xl:mt-8 2xl:border-r-0
+        border-scbluegray-900 text-gray-800 from-scbluegray-300 to-scbluegray-400
+      }
+      @apply rounded-xl bg-gradient-to-r
+      p-2 border-2 mx-2 mt-6 mb-1
+      sm:p-4 sm:border-2 sm:mx-2 sm:mt-8
+      md:p-4 md:border-4 md:mx-2 md:mt-8
+      lg:p-6 lg:border-4 lg:mx-2 lg:mt-8
+      xl:p-6 xl:border-8 xl:mx-2 xl:mt-8
+      2xl:p-8 2xl:border-8 2xl:mx-2 2xl:mt-8
+    }
+
+    .even {
+      a {
+        @apply text-scgold-100 hover:text-scgold-600
+      }
+      @apply text-gray-100  from-scseafoam-900 to-scseafoam-800
+      border-scbluegray-300
+    }
+
+    .odd {
+      a {
+        @apply text-scblue-800 hover:text-scblue-300
+      }
+      @apply text-gray-800 bg-gradient-to-r from-scseafoam-200 to-scseafoam-300
+      border-scbluegray-900
+    }
+
+  }
+}

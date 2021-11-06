@@ -10,9 +10,39 @@
   prose xl:prose-lg break-words font-sans
 }
 
-.sidebar {
+aside.sidebar {
+  a {
+    @apply hover:text-scgold-100
+  }
   @apply bg-gradient-to-r from-scblue-800 to-scblue py-8 px-4 sm:px-12
-  text-scgold-100 truncate break-words font-serif
+  text-scgold-500 truncate break-words font-serif
+}
+
+section.widget {
+  div.stateless-sage-sidebar-top-level {
+    @apply relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-10
+    sm:mx-8 z-10 sm:my-16 sm:inset-4 sm:border-8 sm:border-opacity-0
+  }
+  h2 {
+    @apply text-scseafoam-900 font-sans text-lg pb-2
+  }
+  div.wp-block-group__inner-container {
+    a {
+      @apply hover:text-scpink-600
+    }
+    div.wp-block-group, ul.wp-block-latest-posts, ol.wp-block-latest-comments {
+      @apply my-3 text-scbluegray-900
+    }
+    li {
+      @apply break-words
+    }
+  }
+  @apply relative my-8
+}
+
+.stateless-sage-sidebar-emptydiv {
+  @apply absolute inset-0 bg-gradient-to-r from-scgold-800 to-scgold-500 shadow-lg
+  transform -skew-y-6 sm:skew-y-0 sm:-rotate-3 sm:rounded-3xl z-0
 }
 
 .site-footer {
